@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://kit.fontawesome.com/908828791a.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score">
+        <p>Computer :<span id="c_score">0</span></p>
+        <p>Your :<span id="u_score">0</span></p>
+      </div>
+      <div class="options">
+        <button onclick="check('Rock')">
+          <i class="fa-regular fa-hand-back-fist"></i>
+        </button>
+        <button onclick="check('Scissor')">
+          <i class="fa-regular fa-hand-scissors"></i>
+        </button>
+        <button onclick="check('Paper')">
+          <i class="fa-regular fa-hand"></i>
+        </button>
+      </div>
+      <div class="details">
+        <p>Computer Choose :<span id="c_choose"></span></p>
+        <p>You Choose :<span id="u_choose"></span></p>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
